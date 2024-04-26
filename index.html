@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Newsletter Sign-up</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="form-container">
+        <div class="signup-img">
+          <picture>
+            <source
+              media="(min-width: 1000px)"
+              srcset="./assets/illustration-sign-up-desktop.svg"
+            />
+            <img
+              src="./assets/illustration-sign-up-mobile.svg"
+              alt="Illustration Sign-up"
+            />
+          </picture>
+        </div>
+
+        <div class="signup-info">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+
+          <form id="email-form">
+            <div class="label-wrapper">
+              <label for="email">Email address</label>
+              <span id="error-msg"></span>
+            </div>
+
+            <input type="email" id="email" placeholder="email@company.com" />
+            <br />
+
+            <button id="submit-btn" type="submit" value="Submit">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <section class="success-msg hidden">
+      <img src="./assets/icon-success.svg" alt="Success Icon" />
+      <h2>Thanks for subscribing!</h2>
+      <p id="message"></p>
+      <button id="dismiss">Dismiss message</button>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
